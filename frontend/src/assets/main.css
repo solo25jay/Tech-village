@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tv-card {
+    @apply bg-white rounded-card shadow-card border border-slate-100 p-6;
+  }
+  .tv-btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium text-white
+      bg-gradient-purple-blue hover:opacity-90 transition;
+  }
+  .tv-btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium
+      border border-slate-200 text-navy hover:bg-surface-light transition;
+  }
+  .tv-input {
+    @apply w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none
+      focus:ring-2 focus:ring-electric/40 focus:border-electric;
+  }
+  .tv-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+}
